@@ -1,68 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-
-
-    body{
-       background:linear-gradient(rgba(255, 253, 253, 0.5),white);
-       background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+  </head>
+  <style>
+    body {
+      background: linear-gradient(rgba(255, 253, 253, 0.5), white);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      background-color: rgb(98, 98, 98);
+      height: 43px;
+      padding: 13px;
+    }
+    .hero {
+        top: 23px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      height: 70vh;
+      display: flex;
+      flex-direction: row;
+      padding: 34px;
+      margin: 21px;
+      gap: 23px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .image img {
+      border-radius: 23px;
+      height: 445px;
+      width: 503px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      padding: 23px;
+      color: black;
+      align-items: center;
+      border-radius: 23px;
+      background-color: white;
+      width: 503px;
+      height: 400px;
+    }
+    form input,
+    textarea {
+      padding: 12px;
+      resize: none;
+      background-color: rgb(235, 235, 235);
+      border-radius: 8px;
+      outline: none;
+      border: 1px solid gray;
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+      width: 340px;
+    }
+    button{
+        padding: 12px;
+        width: 120px;
+        border-radius: 23px;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
         color: white;
+        background:linear-gradient(350deg, rgb(35, 59, 75), rgb(21, 51, 111));
     }
-    *{
-        margin: 0px;
-        padding: 0px;
+    button:hover{
+        transform: scale(1.04);
     }
-    h1{
-        text-align: center;
-        color:white;
-        background-color:rgb(98, 98, 98);
-        height: 43px;
-        padding: 13px;
-
+    form h2{
+        font-size: 30px;
     }
-   .hero{
-    height: 70vh;
-    display: flex;
-    flex-direction: row;
-    padding: 34px;
-    margin: 21px;
-    gap: 23px;
-    align-items: center;
-   }
-   .image img{
-    border-radius: 23px;
-    height: 445px;
-    width: 503px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    
-   }
-</style>
-<body>
+  </style>
+  <body>
     <h1>Welcome to my Website</h1>
 
-
-
     <div class="hero">
-        <div class="image">
-            <img src="https://static.vecteezy.com/system/resources/previews/001/177/233/non_2x/man-filling-out-form-online-on-smartphone-vector.jpg" alt="error">
-        </div>
+      <div class="image">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/001/177/233/non_2x/man-filling-out-form-online-on-smartphone-vector.jpg"
+          alt="error"
+        />
+      </div>
 
-        <form class="userInput">
-            
-                <input type="text" name="name" placeholder="Username">
-                <input type="text" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
-                <button type="submit" name="submit">Login</button>
-            
-        </form>
-
+      <form class="userInput">
+        <h2>Register Now</h2>
+        <input type="text" name="name" placeholder="Username" />
+        <input type="text" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <textarea name="" id="" placeholder="Address" rows="23"></textarea>
+        <button type="submit" name="submit">Login</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>
