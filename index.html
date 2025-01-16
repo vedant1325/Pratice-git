@@ -18,6 +18,22 @@
         padding: 13px;
 
     }
+   .hero{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    padding: 34px;
+    margin: 21px;
+    border: 2px solid red;
+    gap: 23px;
+    align-items: center;
+   }
+   .image img{
+    border: 2px solid black;
+    height: 445px;
+    width: 503px;
+    
+   }
 </style>
 <body>
     <h1>Welcome to my Website</h1>
@@ -28,14 +44,15 @@
         <div class="image">
             <img src="https://static.vecteezy.com/system/resources/previews/001/177/233/non_2x/man-filling-out-form-online-on-smartphone-vector.jpg" alt="error">
         </div>
-        <div class="userInput">
-            <form >
+
+        <form class="userInput">
+            
                 <input type="text" name="name" placeholder="Username">
                 <input type="text" name="email" placeholder="Email">
                 <input type="password" name="password" placeholder="Password">
                 <button type="submit" name="submit">Login</button>
-            </form>
-        </div>
+            
+        </form>
 
     </div>
 </body>
